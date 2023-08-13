@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | By JS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
     <div class="main-containor">
         <div class="button-div">
-            <input type="text" class="cal-input" placeholder="0">
+            <!-- <input type="text" class="cal-input" placeholder="0"> -->
+            <p class="cal-input input">0</p>
             <table>
                 <tr>
-                    <td><button class="gray">C</button></td>
-                    <td><button class="gray font">DEL</button></td>
-                    <td><button class="gray">%</button></td>
-                    <td><button class="yellow">÷</button></td>
+                    <td><button class="gray" onclick="clearScreen()">C</button></td>
+                    <td><button class="gray font del" onclick="del()">DEL</button></td>
+                    <td><button class="gray" onclick="modulus()">%</button></td>
+                    <td><button class="yellow" onclick="divid()">÷</button></td>
                 </tr>
                 <tr>
-                    <td><button class="dark-gray">7</button></td>
-                    <td><button class="dark-gray">8</button></td>
-                    <td><button class="dark-gray">9</button></td>
-                    <td><button class="yellow">X</button></td>
+                    <td><button class="dark-gray" onclick="seven()">7</button></td>
+                    <td><button class="dark-gray" onclick="eight()">8</button></td>
+                    <td><button class="dark-gray" onclick="nine()">9</button></td>
+                    <td><button class="yellow" onclick="multi()">X</button></td>
                 </tr>
                 <tr>
-                    <td><button class="dark-gray">4</button></td>
-                    <td><button class="dark-gray">5</button></td>
-                    <td><button class="dark-gray">6</button></td>
-                    <td><button class="yellow">-</button></td>
+                    <td><button class="dark-gray" onclick="four()">4</button></td>
+                    <td><button class="dark-gray" onclick="five()">5</button></td>
+                    <td><button class="dark-gray" onclick="six()">6</button></td>
+                    <td><button class="yellow" onclick="sub()">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="dark-gray">1</button></td>
-                    <td><button class="dark-gray">2</button></td>
-                    <td><button class="dark-gray">3</button></td>
-                    <td><button class="yellow">+</button></td>
+                    <td><button class="dark-gray" onclick="one()">1</button></td>
+                    <td><button class="dark-gray" onclick="two()">2</button></td>
+                    <td><button class="dark-gray" onclick="three()">3</button></td>
+                    <td><button class="yellow" onclick="add()">+</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="zeroo"><button class="dark-gray2">0</button></td>
-                    <td><button class="dark-gray">.</button></td>
-                    <td><button class="yellow">=</button></td>
+                    <td colspan="2" class="zeroo"><button class="dark-gray2" onclick="zero()">0</button></td>
+                    <td><button class="dark-gray" onclick="dot()">.</button></td>
+                    <td><button class="yellow" onclick="equal()">=</button></td>
                 </tr>
             </table>
         </div>
